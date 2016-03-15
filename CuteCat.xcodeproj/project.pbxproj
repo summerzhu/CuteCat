@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		B69A6DB81C98432000AB8F08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DB71C98432000AB8F08 /* main.m */; };
 		B69A6DBB1C98432000AB8F08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DBA1C98432000AB8F08 /* AppDelegate.m */; };
-		B69A6DBE1C98432000AB8F08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DBD1C98432000AB8F08 /* ViewController.m */; };
+		B69A6DBE1C98432000AB8F08 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DBD1C98432000AB8F08 /* LoginViewController.m */; };
 		B69A6DC11C98432000AB8F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69A6DBF1C98432000AB8F08 /* Main.storyboard */; };
 		B69A6DC31C98432000AB8F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69A6DC21C98432000AB8F08 /* Assets.xcassets */; };
 		B69A6DC61C98432000AB8F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69A6DC41C98432000AB8F08 /* LaunchScreen.storyboard */; };
 		B69A6DD11C98432000AB8F08 /* CuteCatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DD01C98432000AB8F08 /* CuteCatTests.m */; };
 		B69A6DDC1C98432000AB8F08 /* CuteCatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DDB1C98432000AB8F08 /* CuteCatUITests.m */; };
+		B69A6DEC1C98459C00AB8F08 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DEB1C98459C00AB8F08 /* BaseViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B69A6DEF1C9845BE00AB8F08 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DEE1C9845BE00AB8F08 /* BaseTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B69A6DF21C98469C00AB8F08 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DF11C98469C00AB8F08 /* RegistViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B69A6DF51C98480900AB8F08 /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DF41C98480900AB8F08 /* ForgetViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B69A6DF91C98497200AB8F08 /* ResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DF81C98497200AB8F08 /* ResetViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +44,8 @@
 		B69A6DB71C98432000AB8F08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B69A6DB91C98432000AB8F08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B69A6DBA1C98432000AB8F08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B69A6DBC1C98432000AB8F08 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B69A6DBD1C98432000AB8F08 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B69A6DBC1C98432000AB8F08 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = CuteCat/LoginViewController.h; sourceTree = "<group>"; };
+		B69A6DBD1C98432000AB8F08 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = CuteCat/LoginViewController.m; sourceTree = "<group>"; };
 		B69A6DC01C98432000AB8F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B69A6DC21C98432000AB8F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B69A6DC51C98432000AB8F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,16 @@
 		B69A6DD71C98432000AB8F08 /* CuteCatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteCatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69A6DDB1C98432000AB8F08 /* CuteCatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuteCatUITests.m; sourceTree = "<group>"; };
 		B69A6DDD1C98432000AB8F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69A6DEA1C98459C00AB8F08 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		B69A6DEB1C98459C00AB8F08 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		B69A6DED1C9845BE00AB8F08 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		B69A6DEE1C9845BE00AB8F08 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		B69A6DF01C98469C00AB8F08 /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		B69A6DF11C98469C00AB8F08 /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		B69A6DF31C98480900AB8F08 /* ForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetViewController.h; sourceTree = "<group>"; };
+		B69A6DF41C98480900AB8F08 /* ForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetViewController.m; sourceTree = "<group>"; };
+		B69A6DF71C98497200AB8F08 /* ResetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetViewController.h; sourceTree = "<group>"; };
+		B69A6DF81C98497200AB8F08 /* ResetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +116,13 @@
 		B69A6DB51C98432000AB8F08 /* CuteCat */ = {
 			isa = PBXGroup;
 			children = (
+				B69A6DEA1C98459C00AB8F08 /* BaseViewController.h */,
+				B69A6DEB1C98459C00AB8F08 /* BaseViewController.m */,
+				B69A6DED1C9845BE00AB8F08 /* BaseTableViewController.h */,
+				B69A6DEE1C9845BE00AB8F08 /* BaseTableViewController.m */,
+				B69A6DE91C98438C00AB8F08 /* account */,
 				B69A6DB91C98432000AB8F08 /* AppDelegate.h */,
 				B69A6DBA1C98432000AB8F08 /* AppDelegate.m */,
-				B69A6DBC1C98432000AB8F08 /* ViewController.h */,
-				B69A6DBD1C98432000AB8F08 /* ViewController.m */,
 				B69A6DBF1C98432000AB8F08 /* Main.storyboard */,
 				B69A6DC21C98432000AB8F08 /* Assets.xcassets */,
 				B69A6DC41C98432000AB8F08 /* LaunchScreen.storyboard */,
@@ -138,6 +156,22 @@
 				B69A6DDD1C98432000AB8F08 /* Info.plist */,
 			);
 			path = CuteCatUITests;
+			sourceTree = "<group>";
+		};
+		B69A6DE91C98438C00AB8F08 /* account */ = {
+			isa = PBXGroup;
+			children = (
+				B69A6DBC1C98432000AB8F08 /* LoginViewController.h */,
+				B69A6DBD1C98432000AB8F08 /* LoginViewController.m */,
+				B69A6DF01C98469C00AB8F08 /* RegistViewController.h */,
+				B69A6DF11C98469C00AB8F08 /* RegistViewController.m */,
+				B69A6DF31C98480900AB8F08 /* ForgetViewController.h */,
+				B69A6DF41C98480900AB8F08 /* ForgetViewController.m */,
+				B69A6DF71C98497200AB8F08 /* ResetViewController.h */,
+				B69A6DF81C98497200AB8F08 /* ResetViewController.m */,
+			);
+			name = account;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B69A6DBE1C98432000AB8F08 /* ViewController.m in Sources */,
+				B69A6DBE1C98432000AB8F08 /* LoginViewController.m in Sources */,
+				B69A6DEC1C98459C00AB8F08 /* BaseViewController.m in Sources */,
+				B69A6DF91C98497200AB8F08 /* ResetViewController.m in Sources */,
+				B69A6DF21C98469C00AB8F08 /* RegistViewController.m in Sources */,
 				B69A6DBB1C98432000AB8F08 /* AppDelegate.m in Sources */,
 				B69A6DB81C98432000AB8F08 /* main.m in Sources */,
+				B69A6DF51C98480900AB8F08 /* ForgetViewController.m in Sources */,
+				B69A6DEF1C9845BE00AB8F08 /* BaseTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
