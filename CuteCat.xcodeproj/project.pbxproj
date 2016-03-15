@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B66EE7431C987269005BADC4 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = B66EE7401C987269005BADC4 /* MBProgressHUD+Add.m */; settings = {ASSET_TAGS = (); }; };
+		B66EE7441C987269005BADC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B66EE7421C987269005BADC4 /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
 		B69A6DB81C98432000AB8F08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DB71C98432000AB8F08 /* main.m */; };
 		B69A6DBB1C98432000AB8F08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DBA1C98432000AB8F08 /* AppDelegate.m */; };
 		B69A6DBE1C98432000AB8F08 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6DBD1C98432000AB8F08 /* LoginViewController.m */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B66EE73F1C987269005BADC4 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		B66EE7401C987269005BADC4 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		B66EE7411C987269005BADC4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B66EE7421C987269005BADC4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		B69A6DB31C98432000AB8F08 /* CuteCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuteCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69A6DB71C98432000AB8F08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B69A6DB91C98432000AB8F08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,9 +99,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B66EE73D1C9871EE005BADC4 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				B66EE73E1C987269005BADC4 /* MBProgressHUD */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		B66EE73E1C987269005BADC4 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B66EE73F1C987269005BADC4 /* MBProgressHUD+Add.h */,
+				B66EE7401C987269005BADC4 /* MBProgressHUD+Add.m */,
+				B66EE7411C987269005BADC4 /* MBProgressHUD.h */,
+				B66EE7421C987269005BADC4 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		B66EE7451C98761C005BADC4 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 		B69A6DAA1C98432000AB8F08 = {
 			isa = PBXGroup;
 			children = (
+				B66EE7451C98761C005BADC4 /* Framework */,
 				B69A6DB51C98432000AB8F08 /* CuteCat */,
 				B69A6DCF1C98432000AB8F08 /* CuteCatTests */,
 				B69A6DDA1C98432000AB8F08 /* CuteCatUITests */,
@@ -116,6 +149,7 @@
 		B69A6DB51C98432000AB8F08 /* CuteCat */ = {
 			isa = PBXGroup;
 			children = (
+				B66EE73D1C9871EE005BADC4 /* ThirdParty */,
 				B69A6DEA1C98459C00AB8F08 /* BaseViewController.h */,
 				B69A6DEB1C98459C00AB8F08 /* BaseViewController.m */,
 				B69A6DED1C9845BE00AB8F08 /* BaseTableViewController.h */,
@@ -308,8 +342,10 @@
 				B69A6DEC1C98459C00AB8F08 /* BaseViewController.m in Sources */,
 				B69A6DF91C98497200AB8F08 /* ResetViewController.m in Sources */,
 				B69A6DF21C98469C00AB8F08 /* RegistViewController.m in Sources */,
+				B66EE7431C987269005BADC4 /* MBProgressHUD+Add.m in Sources */,
 				B69A6DBB1C98432000AB8F08 /* AppDelegate.m in Sources */,
 				B69A6DB81C98432000AB8F08 /* main.m in Sources */,
+				B66EE7441C987269005BADC4 /* MBProgressHUD.m in Sources */,
 				B69A6DF51C98480900AB8F08 /* ForgetViewController.m in Sources */,
 				B69A6DEF1C9845BE00AB8F08 /* BaseTableViewController.m in Sources */,
 			);
@@ -535,6 +571,7 @@
 				B69A6DE21C98432000AB8F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B69A6DE31C98432000AB8F08 /* Build configuration list for PBXNativeTarget "CuteCatTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +580,7 @@
 				B69A6DE51C98432000AB8F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B69A6DE61C98432000AB8F08 /* Build configuration list for PBXNativeTarget "CuteCatUITests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +589,7 @@
 				B69A6DE81C98432000AB8F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

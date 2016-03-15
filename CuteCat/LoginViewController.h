@@ -10,10 +10,13 @@
 #import "BaseViewController.h"
 
 @interface LoginViewController : BaseViewController
+@property (weak, nonatomic) IBOutlet UITextField *phoneBumb;
+@property (weak, nonatomic) IBOutlet UITextField *password;
 
 
 - (IBAction)RegistAction:(id)sender;
 - (IBAction)forgetAction:(id)sender;
+- (IBAction)loginAction:(id)sender;
 
 @end
 

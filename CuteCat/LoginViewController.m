@@ -9,6 +9,9 @@
 #import "LoginViewController.h"
 #import "RegistViewController.h"
 #import "ForgetViewController.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+Add.h"
+
 
 @interface LoginViewController ()
 
@@ -36,5 +39,16 @@
 - (IBAction)forgetAction:(id)sender {
     ForgetViewController *forget = [self.storyboard instantiateViewControllerWithIdentifier:@"ForgetViewController"];
     [self.navigationController pushViewController:forget animated:YES];
+}
+
+- (IBAction)loginAction:(id)sender {
+    if (_phoneBumb.text.length == 0) {
+        [MBProgressHUD showError:@"请输入电话号码" toView:self.view];
+    }else if(_password.text.length == 0 ){
+        [MBProgressHUD showError:@"请输入密码" toView:self.view];
+    }
+
+//Bmob
+    
 }
 @end
