@@ -11,6 +11,7 @@
 #import "ForgetViewController.h"
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+Add.h"
+#import <BmobSDK/Bmob.h>
 
 
 @interface LoginViewController ()
@@ -28,6 +29,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+    
 
 
 - (IBAction)RegistAction:(id)sender {
@@ -49,6 +53,17 @@
     }
 
 //Bmob
+   [BmobUser loginInbackgroundWithAccount:_phoneBumb andPassword:_password block:^(BmobUser *user, NSError *error) {
+       if(user){
+           NSLog(@"%@",user);
+           [MBProgressHUD showError:@"登录成功" toView:self.view];
+//需要跳转到Home页
+           
+       }else{
+           NSLog(@"%@",error);
+           [MBProgressHUD showMessag:@"登录失败" toView:self.view];
+       }
+   }];
     
 }
 @end

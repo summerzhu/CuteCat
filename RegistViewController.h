@@ -10,4 +10,10 @@
 
 @interface RegistViewController : BaseViewController
 
+- (IBAction)regsitAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumb;
+
+
+@property (weak, nonatomic) IBOutlet UITextField *password;
+
 @end

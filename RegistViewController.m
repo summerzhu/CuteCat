@@ -7,6 +7,9 @@
 //
 
 #import "RegistViewController.h"
+#import <BmobSDK/Bmob.h>
+#import "MBProgressHUD+Add.h"
+#import "MBProgressHUD.h"
 
 @interface RegistViewController ()
 
@@ -16,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -23,6 +27,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation
@@ -34,4 +39,26 @@
 }
 */
 
+- (IBAction)regsitAction:(id)sender {
+    if(_phoneNumb.text.length == 0){
+        [MBProgressHUD showError:@"请输入电话号码" toView:self.view];
+    }else if(_password.text.length == 0){
+        [MBProgressHUD showError:@"请输入密码" toView:self.view];
+        
+    }
+    
+    BmobUser *bUser = [[BmobUser alloc]init];
+    bUser.username = _phoneNumb.text;
+    bUser.password = _password.text;
+    [bUser signUpInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+        if (isSuccessful) {
+            [MBProgressHUD showSuccess:@"注册成功" toView:self.view];
+            NSLog(@"注册成功");
+            
+        }else{
+            
+            NSLog(@"注册失败");
+        }
+    }];
+}
 @end
