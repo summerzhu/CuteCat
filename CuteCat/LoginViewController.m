@@ -46,22 +46,25 @@
 }
 
 - (IBAction)loginAction:(id)sender {
-    if (_phoneBumb.text.length == 0) {
+    if (_phoneNumb.text.length == 0) {
         [MBProgressHUD showError:@"请输入电话号码" toView:self.view];
     }else if(_password.text.length == 0 ){
         [MBProgressHUD showError:@"请输入密码" toView:self.view];
     }
 
 //Bmob
-   [BmobUser loginInbackgroundWithAccount:_phoneBumb andPassword:_password block:^(BmobUser *user, NSError *error) {
+   [BmobUser loginInbackgroundWithAccount:_phoneNumb.text andPassword:_password.text block:^(BmobUser *user, NSError *error) {
        if(user){
+           NSLog(@"登录成功");
            NSLog(@"%@",user);
-           [MBProgressHUD showError:@"登录成功" toView:self.view];
+          
+           //[MBProgressHUD showError:@"登录成功" toView:self.view];
 //需要跳转到Home页
            
        }else{
            NSLog(@"%@",error);
-           [MBProgressHUD showMessag:@"登录失败" toView:self.view];
+           NSLog(@"登录失败");
+           //[MBProgressHUD showError:@"登录失败" toView:self.view];
        }
    }];
     

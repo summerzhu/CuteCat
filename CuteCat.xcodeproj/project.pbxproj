@@ -109,12 +109,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B3589C1C99303A00AFFC5F /* CoreLocation.framework in Frameworks */,
+				B6B358AC1C99310200AFFC5F /* SystemConfiguration.framework in Frameworks */,
 				B6B358B61C99314100AFFC5F /* MediaPlayer.framework in Frameworks */,
 				B6B358B41C99313500AFFC5F /* AVFoundation.framework in Frameworks */,
 				B6B358B21C99312E00AFFC5F /* libsqlite3.tbd in Frameworks */,
 				B6B358B01C99312200AFFC5F /* libicucore.tbd in Frameworks */,
 				B6B358AE1C99311200AFFC5F /* libz.1.2.5.tbd in Frameworks */,
-				B6B358AC1C99310200AFFC5F /* SystemConfiguration.framework in Frameworks */,
 				B6B358AA1C9930F100AFFC5F /* CoreTelephony.framework in Frameworks */,
 				B6B358A81C9930E500AFFC5F /* CFNetwork.framework in Frameworks */,
 				B6B358A61C9930DA00AFFC5F /* MobileCoreServices.framework in Frameworks */,
@@ -122,7 +123,6 @@
 				B6B358A41C9930BC00AFFC5F /* Security.framework in Frameworks */,
 				B6B358A01C99309700AFFC5F /* UIKit.framework in Frameworks */,
 				B6B3589E1C99308D00AFFC5F /* Foundation.framework in Frameworks */,
-				B6B3589C1C99303A00AFFC5F /* CoreLocation.framework in Frameworks */,
 				B6B3589A1C992FEF00AFFC5F /* BmobSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

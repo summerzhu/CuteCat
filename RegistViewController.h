@@ -9,11 +9,15 @@
 #import "BaseViewController.h"
 
 @interface RegistViewController : BaseViewController
+- (IBAction)checkAction:(id)sender;
+
+- (IBAction)verificateAction:(id)sender;
 
 - (IBAction)regsitAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumb;
 
 
 @property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UITextField *verification;
 
 @end

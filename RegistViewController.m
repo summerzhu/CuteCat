@@ -11,6 +11,8 @@
 #import "MBProgressHUD+Add.h"
 #import "MBProgressHUD.h"
 
+NSString *code;
+
 @interface RegistViewController ()
 
 @end
@@ -38,6 +40,29 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+//验证验证码 未完成
+- (IBAction)checkAction:(id)sender {
+    [BmobSMS verifySMSCodeInBackgroundWithPhoneNumber:_phoneNumb.text andSMSCode:code resultBlock:^(BOOL isSuccessful, NSError *error) {
+        if (isSuccessful) {
+            [MBProgressHUD showError:@"验证成功" toView:self.view];
+        }
+    }];
+}
+
+//请求验证码
+- (IBAction)verificateAction:(id)sender {
+    [BmobSMS requestSMSCodeInBackgroundWithPhoneNumber:_phoneNumb.text andTemplate:@"register" resultBlock:^(int number, NSError *error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }else{
+            NSLog(@"sms ID:%d",number);
+            
+        }
+    }];
+    
+    
+}
 
 - (IBAction)regsitAction:(id)sender {
     if(_phoneNumb.text.length == 0){
