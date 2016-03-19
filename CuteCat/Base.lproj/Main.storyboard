@@ -8,7 +8,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Kzg-BA-vBR">
             <objects>
-                <navigationController id="zsZ-VM-Owz" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNav" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zsZ-VM-Owz" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Sz-r6-BIB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -279,7 +279,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Zg-C2-sJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815" y="1184"/>
+            <point key="canvasLocation" x="815" y="2108"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8Ni-ne-xXL">
@@ -306,8 +306,8 @@
         <!--首页-->
         <scene sceneID="u9Y-fa-uvn">
             <objects>
-                <navigationController id="AVx-dy-OvG" userLabel="首页" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9e9-Fv-grM"/>
+                <navigationController storyboardIdentifier="HomeTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AVx-dy-OvG" userLabel="首页" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="社区" id="9e9-Fv-grM" userLabel="首页"/>
                     <navigationItem key="navigationItem" id="KZI-KR-g8m"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ChT-II-xTn">
@@ -320,12 +320,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GxL-yl-p6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131" y="1184"/>
+            <point key="canvasLocation" x="147" y="2108"/>
         </scene>
         <!--社区-->
         <scene sceneID="yT2-tK-MNF">
             <objects>
-                <tableViewController id="mly-BE-89F" userLabel="社区" sceneMemberID="viewController">
+                <tableViewController id="mly-BE-89F" userLabel="社区" customClass="HomeTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9tt-Db-zh7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -350,13 +350,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVr-dt-cMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815" y="2103"/>
+            <point key="canvasLocation" x="815" y="1271"/>
         </scene>
         <!--社区-->
         <scene sceneID="ghv-nH-gyT">
             <objects>
                 <navigationController id="BDj-Ob-mJ6" userLabel="社区" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5rX-0X-kwg"/>
+                    <tabBarItem key="tabBarItem" title="首页" id="5rX-0X-kwg"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="keR-SD-qcL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -368,7 +368,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clI-F8-RZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="147" y="2103"/>
+            <point key="canvasLocation" x="147" y="1271"/>
         </scene>
         <!--发布消息-->
         <scene sceneID="mmI-ie-Q1c">
@@ -464,7 +464,7 @@
         <scene sceneID="zVF-vk-Ugw">
             <objects>
                 <navigationController id="DRC-S9-y7z" userLabel="个人主页" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6Cu-rg-Bkq"/>
+                    <tabBarItem key="tabBarItem" title="个人" id="6Cu-rg-Bkq"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bTk-mJ-Uvs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -482,7 +482,7 @@
         <scene sceneID="186-Dg-f0C">
             <objects>
                 <navigationController id="aVm-Gc-5ed" userLabel="消息" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="j5e-7A-jnH"/>
+                    <tabBarItem key="tabBarItem" title="消息" id="j5e-7A-jnH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c1w-Jh-Srh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -500,7 +500,7 @@
         <scene sceneID="E5D-bj-mhX">
             <objects>
                 <navigationController id="dtp-r2-PqY" userLabel="发布信息" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="BS9-3m-vno"/>
+                    <tabBarItem key="tabBarItem" title="发布" id="BS9-3m-vno"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZWR-1g-wMt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

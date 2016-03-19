@@ -12,6 +12,7 @@
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+Add.h"
 #import <BmobSDK/Bmob.h>
+#import "Const.h"
 
 
 @interface LoginViewController ()
@@ -57,10 +58,14 @@
        if(user){
            NSLog(@"登录成功");
            NSLog(@"%@",user);
-          
-           //[MBProgressHUD showError:@"登录成功" toView:self.view];
-//需要跳转到Home页
            
+        //[MBProgressHUD showError:@"登录成功" toView:self.view];
+           
+//需要跳转到Home页
+           [self dismissViewControllerAnimated:YES completion:nil];
+           [[NSUserDefaults standardUserDefaults]setBool:YES forKey:kHadLogin];
+           [[NSUserDefaults standardUserDefaults]synchronize];
+       
        }else{
            NSLog(@"%@",error);
            NSLog(@"登录失败");
